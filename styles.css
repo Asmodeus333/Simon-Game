@@ -1,0 +1,197 @@
+/*body {
+  background-color: #011F3F;
+  text-align: center;
+}
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+h1 {
+  font-family: "Pixelify Sans", serif;
+  font-size: 80px;
+  color: antiquewhite;
+  margin: 0;
+  padding: 30px;
+
+}
+
+.game-over {
+  background-color: red; 
+  color: white;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(5px); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0px); }
+}
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid;
+  border-radius: 20%;
+}
+.red {
+  background-color: red;
+
+}
+.green {
+  background-color: green;
+
+}
+.yellow {
+  background-color: yellow;
+
+}
+.blue {
+  background-color:blue;
+
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+
+
+}*/
+
+/* Estilos gerais para o corpo */
+body {
+  background-color: #011F3F;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container centralizado e responsivo */
+.container {
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+
+/* Estilo para o título */
+h1 {
+  font-family: "Pixelify Sans", serif;
+  font-size: 6vw; /* Usando vw para o tamanho se ajustar ao tamanho da tela */
+  color: antiquewhite;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* Estilo para a classe "game-over" */
+.game-over {
+  background-color: red;
+  color: white;
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Animação de shake */
+@keyframes shake {
+  0% { transform: translateX(5px); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0px); }
+}
+
+/* Estilo dos botões */
+.btn {
+  margin: 5vh 2vw;
+  display: inline-block;
+  height: 25vw; /* Ajustado para a largura da tela */
+  width: 25vw;
+  max-height: 200px; /* Definindo um tamanho máximo */
+  max-width: 200px; /* Definindo um tamanho máximo */
+  border: 10px solid;
+  border-radius: 20%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cores dos botões */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* Estilo para o botão pressionado */
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* Media Queries para ajustes em telas menores */
+
+@media (min-width: 640px) {
+  /* Para telas pequenas, reduza o tamanho do título */
+  .btn {
+    font-size: 10vw;
+    height: 200px;
+    width: 25vh;
+    margin: 5vh 2vh;
+}
+}
+
+@media (max-width:412) {
+  .container {margin: auto;
+  padding: 30px
+}
+h1 {
+  margin: 20px;
+  font-size: 10vw;
+  padding: 0;
+}
+.btn {
+  margin: 2vh 2vw;
+  height: 40vw;
+  width: 30vw;
+}
+}
+
+@media (max-height:412px) {
+  .btn {
+    height: 100px;
+    width: 25vh;   
+}
+}
+
+/* Ajustes específicos para celulares na vertical */
+/*@media (max-width: 914px) and (orientation: portrait) {
+  .btn {
+    margin: 2vh 2vw;
+    display: inline-block;
+    height: 10vw;
+    width: 10vw;
+  }
+}
+
+
+@media (max-width: 400px) and (orientation: portrait) {
+  .btn {
+    margin: 2vh 2vw;
+    display: inline-block;
+    height: 10vw;
+    width: 10vw;
+  }
+}*/
